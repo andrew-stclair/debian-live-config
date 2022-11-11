@@ -26,7 +26,7 @@ jobs:
           # Change this to point to your image name
           imageName: ghcr.io/${{ github.repository }}-devcontainer
           # Change this to be your CI task/script
-          runCmd: sudo make install_buildenv && sudo make build
+          runCmd: sudo make clean && sudo make install_buildenv && sudo make build
 
       - uses: actions/upload-artifact@v3
         with:
