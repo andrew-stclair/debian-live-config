@@ -6,7 +6,7 @@
         {
             "label": "Build ISO",
             "type": "shell",
-            "command": "make install_buildenv && make",
+            "command": "sudo make install_buildenv && sudo make build",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
