@@ -28,5 +28,8 @@ jobs:
           # Change this to be your CI task/script
           runCmd: make install_buildenv && make
 
-      - name: List everything
-        run: find .
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: |
+            build.log
