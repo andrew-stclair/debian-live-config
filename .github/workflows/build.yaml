@@ -27,3 +27,6 @@ jobs:
           imageName: ghcr.io/${{ github.repository }}-devcontainer
           # Change this to be your CI task/script
           runCmd: make install_buildenv && make
+
+      - name: List everything
+        run: find .
