@@ -28,7 +28,7 @@ jobs:
           # Change this to be your CI task/script
           runCmd: sudo make clean && sudo make install_buildenv && sudo make build
 
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
           name: build-artifacts
           path: |
